@@ -1,0 +1,52 @@
+$ mkdir newfol
+$ cd newfol
+$ git init
+$ git config --global user.email "omkar.kale@sakec.ac.in"
+$ git config --global user.name "Omkar kale"
+
+$ git add index1.txt
+$ git add index2.txt
+$ git add index3.txt
+
+$ notepad index1.txt
+$ notepad index2.txt
+$ notepad index3.txt
+
+$ git commit -m"initial commit"
+
+$ git branch Dev
+$ git branch Test
+
+$ git checkout Dev
+$ notepad index1.txt
+$ git add index1.txt
+$ git commit -m "File 1 Commited in Dev Branch"
+
+$ git checkout Test
+$ notepad index2.txt
+$ notepad index3.txt
+$ git add index2.txt
+$ git add index3.txt
+
+$ git commit -m "File 2 and 3 Commited in Test Branch"
+
+$ git checkout master
+$ git merge Test
+$ git merge Dev
+
+$ notepad index1.txt
+$ diff index1.txt
+$ git add index1.txt
+$ git commit -m"Chnaged the content of one file"
+
+$ git remote add origin https://github.com/omkarkaleb/Github-Assignment-Neosoft.git
+$ git branch -M main
+$ git push -u origin main
+
+$ cd ..
+$ mkdir gitclone
+$ cd gitclone
+$ git clone https://github.com/omkarkaleb/Github-Assignment-Neosoft.git
+
+$ cd Github-Assignment-Neosoft
+$ notepad solution.txt
